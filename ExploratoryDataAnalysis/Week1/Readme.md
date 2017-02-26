@@ -95,7 +95,7 @@ The four plots that you will need to construct are shown below.
 ### Plot 1
 
 
-![plot of chunk unnamed-chunk-2](/uludagy/DataScienceSpecialization/blob/master/ExploratoryDataAnalysis/Week1/plot1.pdf) 
+![plot of chunk unnamed-chunk-2](/ExploratoryDataAnalysis/Week1/plot1.pdf) 
 
 
 ### Plot 2
