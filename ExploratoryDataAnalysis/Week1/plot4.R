@@ -11,7 +11,7 @@ plot4 <- function(x){
       submeter.3   <- ss$Sub_metering_3
       
       
-      pdf("plot4.pdf")
+      #pdf("plot4.pdf")
       par(mfrow = c(2,2))
       
       #plot1
@@ -26,13 +26,15 @@ plot4 <- function(x){
       lines(dateWithHour, submeter.3, type = "l", col = "blue")
       legend("topright", c("Submeter.1","Submeter.2","Submeter.3"), 
              col = c("black","red","blue"), 
-             lty = 1, 
-             lwd = 1)
+             lty = c(1,1), 
+             lwd = c(1,1),
+             cex = 0.75,
+             bty = "n")
       
       #plot4
       plot(dateWithHour, grp, xlab = "dateTime", ylab = "Global Reactive Power", type = "l")
       
-      
+      dev.copy(png, file="plot4.png", width=480, height=480)
       dev.off()
 }
 

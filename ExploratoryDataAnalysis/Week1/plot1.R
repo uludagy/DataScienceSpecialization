@@ -4,11 +4,13 @@ plot1 <- function(x){
 
       gap <- as.numeric(levels(ss$Global_active_power)[ss$Global_active_power])
       
-      pdf("plot1.pdf")
-      
+      #pdf("plot1.png")
       hist(gap, main = "Global Active Power", 
-                ylab = "Frequency", 
-                xlab = "Global Active Power (kw)", 
-                 col = "Red")
+           ylab = "Frequency", 
+           xlab = "Global Active Power (kw)", 
+           col = "Red")
+      
+      
+      dev.copy(png, file="plot1.png", width=480, height=480)
       dev.off()
 }

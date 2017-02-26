@@ -5,10 +5,12 @@ plot2 <- function(x){
       gap <- as.numeric(levels(ss$Global_active_power)[ss$Global_active_power])
       dateWithHour <- strptime(paste(ss$Date, ss$Time, sep = " "), format = "%d/%m/%Y %H:%M:%S")
       
-      pdf("plot2.pdf")
+      ##pdf("plot2.pdf")
       
       plot(dateWithHour,gap, type = "l", xlab = " "
                                        , ylab =  "Global Active Power(kw)")
+      
+      dev.copy(png, file="plot2.png", width=480, height=480)
       dev.off()
      
 }
