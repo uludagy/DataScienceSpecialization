@@ -95,7 +95,7 @@ The four plots that you will need to construct are shown below.
 ### Plot 1
 
 
-![plot1](/ExploratoryDataAnalysis/Week1/plot1.pdf) 
+![plot1](/ExploratoryDataAnalysis/Week1/plot1.png) 
 
 
 ### Plot 2
